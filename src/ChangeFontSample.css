@@ -1,5 +1,5 @@
 .sample-input{
-    width:calc(100% - 1em - 2px - 4em);
+    width: calc(100% - 1em - 4px - 4em);
     padding:0.5em;
     font-size: 1em;
     margin:2em;

@@ -7,15 +7,17 @@ import FontPagerButton from './FontPagerButton';
 class FontPager extends Component {
     constructor(props) {
 		super(props);
-        console.log(props);
-        this.items = [];
-        for (let i = 0; i < this.props.params.number; i++) {
-            this.items.push(<FontPagerButton key={i} index={i} navigate={props.navigate} currentPage={props.params.page} />);
-        }
+        this.renderPages = function(){
+            let items = [];
+            for (let i = 0; i < this.props.numPages; i++) {
+                items.push(<FontPagerButton key={i} index={i} navigate={this.props.navigate} currentPage={this.props.currentPage} />);
+            }
+            return items;
+        }.bind(this);
 	}
     render() {
         return (
-            <nav className="pager">{this.items}</nav>
+            <nav className="pager">{this.renderPages()}</nav>
         );
     }
 }

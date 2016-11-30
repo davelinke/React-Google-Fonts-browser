@@ -15,8 +15,6 @@
 .pager .page.active {
     background-color:#fff;
     border:1px solid #187898;
-    width:calc(2em - 2px);
-    height:calc(2em - 2px);
     color:#187898;
 
     line-height: calc(2em - 2px);

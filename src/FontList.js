@@ -17,7 +17,9 @@ class FontList extends Component {
         };
         this.state = {
             fonts:new Fonts(this.defFontParams).list,
-            messages:Messages
+            messages:Messages,
+            currentPage:this.defFontParams.page,
+            numPages:this.defFontParams.number
         };
         this.renderFonts = function(){
             let demMessages = this.state.messages;
@@ -30,6 +32,7 @@ class FontList extends Component {
         this.navigate = function(newParams){
             document.querySelector('body').scrollTop = 0;
             this.setState({ fonts: new Fonts(newParams).list });
+            this.setState({ currentPage:newParams.page });
         }.bind(this);
     }
     render() {
@@ -39,7 +42,7 @@ class FontList extends Component {
                 <div className="font-list">
                     {this.renderFonts()}
                 </div>
-                <FontPager params={this.defFontParams} navigate={this.navigate}></FontPager>
+                <FontPager navigate={this.navigate} numPages={this.state.numPages} currentPage={this.state.currentPage}></FontPager>
             </div>
         );
     }
