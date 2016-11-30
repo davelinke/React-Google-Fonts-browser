@@ -2,16 +2,15 @@ import React, { Component } from 'react';
 
 import './FontPager.css';
 
+import FontPagerButton from './FontPagerButton';
+
 class FontPager extends Component {
     constructor(props) {
 		super(props);
+        console.log(props);
         this.items = [];
-        this.navigate = function(page){
-            props.navigate({number:16,page:page});
-        };
         for (let i = 0; i < this.props.params.number; i++) {
-            let activeClass = 'page' + (this.props.params.page===i?' active':'');
-            this.items.push(<button key={i} className={activeClass} onClick={this.navigate.bind(this,i)}>{i}</button>);
+            this.items.push(<FontPagerButton key={i} index={i} navigate={props.navigate} currentPage={props.params.page} />);
         }
 	}
     render() {

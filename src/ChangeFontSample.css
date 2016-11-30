@@ -1,7 +1,7 @@
 .sample-input{
-    width:calc(100% - 1em - 2px);
+    width:calc(100% - 1em - 2px - 4em);
     padding:0.5em;
     font-size: 1em;
-    margin:0;
+    margin:2em;
     outline:none;
 }

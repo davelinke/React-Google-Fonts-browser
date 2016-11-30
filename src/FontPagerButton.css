@@ -1,0 +1,27 @@
+.pager .page {
+    margin: 1em 0.25em;
+    background-color: #187898;
+    color: #fff;
+    border: 0;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    padding: 0;
+    text-align: center;
+    font-size: 0.75em;
+    cursor: pointer;
+}
+.pager .page.active {
+    background-color:#fff;
+    border:1px solid #187898;
+    width:calc(2em - 2px);
+    height:calc(2em - 2px);
+    color:#187898;
+
+    line-height: calc(2em - 2px);
+}
+.pager .page:hover {
+    background-color: #54A7C3;
+    color: #fff;
+}

@@ -36,7 +36,7 @@ class FontList extends Component {
         return (
             <div>
                 <ChangeFontSample addGreeting={this.addGreeting} />
-                <div className="hello-world-list">
+                <div className="font-list">
                     {this.renderFonts()}
                 </div>
                 <FontPager params={this.defFontParams} navigate={this.navigate}></FontPager>

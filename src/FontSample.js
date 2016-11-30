@@ -8,11 +8,11 @@ class FontSample extends Component {
             fontFamily:this.props.font.family
         };
         return (
-            <div>
+            <div className="font-sample-card">
                 <link href={fontUrl} rel="stylesheet" type="text/css"></link>
-                <div className="font-wrapper">
-                    <div className="font-name">{fontName}</div>
-                    <div className="font-sample" style={style}>{this.props.message}</div>
+                <div className="font-sample-container">
+                    <div className="font-sample-name">{fontName}</div>
+                    <div className="font-sample-text" style={style}>{this.props.message}</div>
                 </div>
             </div>
         );
