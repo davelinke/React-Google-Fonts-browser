@@ -1,4 +1,4 @@
-A simple ReactJS google fonts browser.
+A simple ReactJS google fonts browser. Check out the demo [here](http://rgf.davelinke.com/).
 
 ## Dependencies
 

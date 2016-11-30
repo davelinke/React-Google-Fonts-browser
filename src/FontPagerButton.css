@@ -19,7 +19,8 @@
 
     line-height: calc(2em - 2px);
 }
-.pager .page:hover {
+.pager .page:hover, .pager .page:focus {
     background-color: #54A7C3;
     color: #fff;
+    outline:0;
 }

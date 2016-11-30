@@ -1,5 +1,9 @@
 .font-sample-card{
     width:100%;
+    cursor:pointer;
+}
+.font-sample-card:hover{
+    background-color: #f9f9f9;
 }
 .font-sample-container {
     padding: 1em 1em;
