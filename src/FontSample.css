@@ -2,6 +2,9 @@
     width:100%;
     cursor:pointer;
 }
+.font-sample-card.loading .font-sample-text{
+    display:none;
+}
 .font-sample-card:hover{
     background-color: #f9f9f9;
 }
@@ -27,4 +30,12 @@
     .font-sample-card{
         width:25%;
     }
+}
+.text-placeholder,.font-sample-text{
+    min-height: 200px;
+}
+.text-placeholder:before{
+    content:"░░░░░░ ░░░░░░░░ ░░░░░░░░░ ░░░░░░░░";
+    font-size: 2rem;
+    color: rgba(0,0,0,0.1);
 }

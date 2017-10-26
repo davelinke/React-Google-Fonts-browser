@@ -147,15 +147,15 @@ let AllFonts = [
             "700"
         ]
     },
-    {
-        "family":"Open Sans Condensed",
-        "category":"sans-serif",
-        "variants":[
-            "300",
-            "300italic",
-            "700"
-        ]
-    },
+    // {
+    //     "family":"Open Sans Condensed",
+    //     "category":"sans-serif",
+    //     "variants":[
+    //         "300",
+    //         "300italic",
+    //         "700"
+    //     ]
+    // },
     {
         "family":"Droid Sans",
         "category":"sans-serif",

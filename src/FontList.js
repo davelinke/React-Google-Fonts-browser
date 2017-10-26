@@ -12,7 +12,7 @@ class FontList extends Component {
     constructor(props){
         super(props);
         this.defFontParams = {
-            number:16,
+            number:8,
             page:0
         };
         this.state = {
@@ -24,7 +24,7 @@ class FontList extends Component {
         this.renderFonts = function(){
             let demMessages = this.state.messages;
             let demFonts = this.state.fonts;
-            return demFonts.map((font,i) => (<FontSample key={i} font={font} message={demMessages[i % demMessages.length]} />));
+            return demFonts.map((font,i) => (<FontSample loadedStylesheets={this.props.loadedStylesheets} updateStylesheets={this.props.updateStylesheets} key={i} font={font} message={demMessages[i % demMessages.length]} />));
         }.bind(this);
         this.addGreeting = function(newName){
             this.setState({ messages: (newName?[newName]:Messages) });
